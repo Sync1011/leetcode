@@ -31,7 +31,7 @@
            }
        }
 
-       List<Boolean> result = new ArrayList();
+       List<Boolean> result = new ArrayList<>();
        for (int num : candies) {
            if (num + extraCandies >= highest) {
                result.add(true);
