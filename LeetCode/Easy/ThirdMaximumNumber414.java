@@ -8,7 +8,7 @@
 public class ThirdMaximumNumber414 {
     public static void main(String[] args) {
         ThirdMaximumNumber414 main = new ThirdMaximumNumber414();
-        System.out.println(new int[]{3,2,1});
+        System.out.println(main.thirdMax(new int[]{3,2,1}));
     }
 
     public int thirdMax(int[] nums) {
