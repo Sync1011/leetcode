@@ -1,4 +1,6 @@
 /**
+ * https://leetcode.com/problems/set-mismatch
+ * 
  * Given an array nums representing the data status of this set after the error. 
  * Your task is to firstly find the number occurs twice and then find the number that is missing. 
  * Return them in the form of an array.

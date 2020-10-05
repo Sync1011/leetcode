@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * https://leetcode.com/problems/self-dividing-numbers
+ * 
  * A self-dividing number is a number that is divisible by every digit it
  * contains. For example, 128 is a self-dividing number because 128 % 1 == 0,
  * 128 % 2 == 0, and 128 % 8 == 0. Also, a self-dividing number is not allowed

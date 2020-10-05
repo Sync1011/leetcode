@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
+ * https://leetcode.com/problems/intersection-of-two-arrays
+ * 
  * Given two arrays, write a function to compute their intersection.
  * 
  * Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]

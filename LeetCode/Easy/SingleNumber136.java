@@ -1,8 +1,9 @@
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 /**
+ * https://leetcode.com/problems/single-number
+ * 
  * Given a non-empty array of integers nums, every element appears twice except for one. 
  * Find that single one.
  */

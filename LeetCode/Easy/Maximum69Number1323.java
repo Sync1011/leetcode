@@ -7,9 +7,9 @@
  * Input: num = 9669
  * Output: 9969
  */
-public class Maximum69Number {
+public class Maximum69Number1323 {
     public static void main(String[] args) {
-        Maximum69Number main = new Maximum69Number();
+        Maximum69Number1323 main = new Maximum69Number1323();
         System.out.println(main.maximum69Number(9669));
         System.out.println(main.maximum69Number(9996));
         System.out.println(main.maximum69Number(9999));

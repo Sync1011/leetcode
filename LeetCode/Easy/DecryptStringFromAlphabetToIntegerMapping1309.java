@@ -1,6 +1,8 @@
 import java.util.HashMap;
 
 /**
+ * https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping
+ * 
  * Given a string s formed by digits ('0' - '9') and '#' . We want to map s to
  * English lowercase characters as follows: Characters ('a' to 'i') are
  * represented by ('1' to '9') respectively. Characters ('j' to 'z') are
@@ -11,9 +13,9 @@ import java.util.HashMap;
  * , "a" -> "1" , "b" -> "2".
  */
 
-public class DecryptStringFromAlphabetToIntegerMapping {
+public class DecryptStringFromAlphabetToIntegerMapping1309 {
     public static void main(String[] args) {
-        DecryptStringFromAlphabetToIntegerMapping main = new DecryptStringFromAlphabetToIntegerMapping();
+        DecryptStringFromAlphabetToIntegerMapping1309 main = new DecryptStringFromAlphabetToIntegerMapping1309();
         System.out.println(main.freqAlphabets("10#11#12"));
     }
 
