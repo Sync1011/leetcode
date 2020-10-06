@@ -19,7 +19,7 @@ public class CanPlaceFlowers605 {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
         int count = 0;
         /**
-         * For even 0 value, check if both adjacent values are also zeros.
+         * For every 0 value, check if both adjacent values are also zeros.
          * For the first and last elements, 
          *      we need not check the previous and the next adjacent positions respectively.
          */
