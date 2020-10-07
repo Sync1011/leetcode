@@ -8,8 +8,8 @@
 
 public class MaximumSubarray53 {
     public static void main(String[] args) {
-        Maximum69Number1323 main = new Maximum69Number1323();
-        System.out.println(new int[]{-2,1,-3,4,-1,2,1,-5,4});
+        MaximumSubarray53 main = new MaximumSubarray53();
+        System.out.println(main.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
     }
     
     public int maxSubArray(int[] nums) {
