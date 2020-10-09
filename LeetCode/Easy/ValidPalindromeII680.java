@@ -13,8 +13,8 @@ public class ValidPalindromeII680 {
     public static void main(String[] args) {
         ValidPalindromeII680 main = new ValidPalindromeII680();
         System.out.println(main.validPalindrome("abc"));
-     //   System.out.println(main.validPalindrome("aba"));
-      //  System.out.println(main.validPalindrome("abca"));
+        System.out.println(main.validPalindrome("aba"));
+        System.out.println(main.validPalindrome("abca"));
     }
 
     public boolean validPalindrome(String s) {
@@ -30,8 +30,12 @@ public class ValidPalindromeII680 {
             if (c[left] == c[right]) {
                 left++;
                 right--;
+            } else if (helper(s, left+1, right)) {
+                return true;
+            } else if (helper(s, left, right-1)) {
+                return true;
             } else {
-                return helper(s, left+1, right) || helper(s, left, right-1);
+                return false;
             }
         }
         return true;
