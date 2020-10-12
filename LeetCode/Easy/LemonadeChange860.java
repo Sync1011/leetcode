@@ -10,8 +10,8 @@
 
 public class LemonadeChange860 {
     public static void main(String[] args) {
-        LemonadeChange860 main = LemonadeChange860();
-        main.lemonadeChange(new int{}[5,5,5,10,20]);
+        LemonadeChange860 main = new LemonadeChange860();
+        main.lemonadeChange(new int[]{5,5,5,10,20});
     }
 
     public boolean lemonadeChange(int[] bills) {

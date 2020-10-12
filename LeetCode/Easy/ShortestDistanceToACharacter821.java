@@ -13,26 +13,40 @@
 public class ShortestDistanceToACharacter821 {
     public static void main(String[] args) {
         ShortestDistanceToACharacter821 main = new ShortestDistanceToACharacter821();
-        main.shortestToChar("loveleetcode", 'e');
+        int[] result = main.shortestToChar("loveleetcode", 'e');
+        for (int num : result) {
+            System.out.print(num + ", ");
+        }
     }
 
     public int[] shortestToChar(String S, char C) {
-        int i = 0;
-        int j = 0;
+        int cIndex = 0, sIndex = 0, lastC = -1;
         int[] arr = new int[S.length()];
-        while (j < S.length()) {
-            while (j != S.length() && S.charAt(j) != C) {
-                j++;
+        while (cIndex < S.length()){
+            // Find the first/next occurrence of C in S
+			while (cIndex < S.length() && S.charAt(cIndex) != C) {
+				cIndex++;
             }
-            while (i < j) {
-                arr[i] = (j+1) - (i+1);
-                i++;
+            // Move the S pointer until C and fill the result with the shortest distance
+            while (sIndex < cIndex) {
+                if (lastC == -1) {
+                    // Initial stage where there is no previous occurrence of C in S yet
+                    arr[sIndex] = cIndex - sIndex;
+                } else if (cIndex < S.length() && S.charAt(cIndex) == C) {
+                    // You have both previous and the next occurrences of C in S - Get the minimum
+                    int val1 = cIndex - sIndex;
+                    int val2 = sIndex - lastC;
+                    arr[sIndex] = Math.min(val1, val2);
+                } else {
+					// Last stage where you crossed the last occurrence of C in S
+					arr[sIndex] = sIndex - lastC;
+                }
+                sIndex++;
             }
-            if (i == j) {
-                arr[i] = 0;
-                i++;
-                j++;
-            }
+
+            lastC = cIndex;
+            cIndex++;
+            sIndex++;
         }
         return arr;
     }
