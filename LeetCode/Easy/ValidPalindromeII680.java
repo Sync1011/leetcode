@@ -12,9 +12,10 @@
 public class ValidPalindromeII680 {
     public static void main(String[] args) {
         ValidPalindromeII680 main = new ValidPalindromeII680();
-        System.out.println(main.validPalindrome("abc"));
-        System.out.println(main.validPalindrome("aba"));
-        System.out.println(main.validPalindrome("abca"));
+        // System.out.println(main.validPalindrome("abc"));
+        // System.out.println(main.validPalindrome("aba"));
+        // System.out.println(main.validPalindrome("abca"));
+        System.out.println(main.validPalindrome("abb"));
     }
 
     public boolean validPalindrome(String s) {

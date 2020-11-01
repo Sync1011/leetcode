@@ -15,7 +15,7 @@ public class LongPressedName925 {
     public static void main(String[] args) {
         LongPressedName925 main = new LongPressedName925();
         System.out.println(main.isLongPressedName("alex", "aaleex"));
-        System.out.println(main.isLongPressedName("saeed", "ssaaedd"));
+      //  System.out.println(main.isLongPressedName("saeed", "ssaaedd"));
     }
 
     public boolean isLongPressedName(String name, String typed) {

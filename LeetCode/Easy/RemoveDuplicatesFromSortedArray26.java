@@ -8,7 +8,7 @@
 public class RemoveDuplicatesFromSortedArray26 {
     public static void main(String[] args) {
         RemoveDuplicatesFromSortedArray26 main = new RemoveDuplicatesFromSortedArray26();
-        System.out.println(main.removeDuplicates(new int[]{1,1}));
+        System.out.println(main.removeDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4}));
     }
 
     public int removeDuplicates(int[] nums) {
